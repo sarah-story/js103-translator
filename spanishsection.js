@@ -1,26 +1,18 @@
 var Translate = (function(translate) {
- var 
+ var dictionary = {"merry":"alegre", "christmas":"navidad", "and":"y", "happy":"feliz", "new":"nuevo", "year":"ano"};
 
  
- 	solarsystem.getcloset5 = function() {
-    	return closest5;
-    };
-    
-    solarsystem.getAge = function() {
-      return estimatedAge;
-    };
-    solarsystem.setAge = function(age) {
-      estimatedAge = age;
-    };
-    solarsystem.getDwarfPlanets = function() {
-    	return dwarfPlanets;
-    };
-    solarsystem.setDwarfPlanets = function(dwarfPlanetsName) {
-    	dwarfPlanets.push(dwarfPlanetsName);
-    };
-
-    return solarsystem
-
+ 	translate.translateToSpanish = function(sentence) {
+    	var sentenceArray = sentence.split(" ");
+      var spanishSentence = "";
+      for (var i = 0; i < sentenceArray.length; i++) {
+        spanishSentence += dictionary[sentenceArray[i]] + " ";
+      }
+      return spanishSentence;
+    }
+   return translate
 })(Translate);
 
-
+  
+    console.log(Translate.translateToSpanish("merry christmas and happy new year"))
+    
