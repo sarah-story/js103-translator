@@ -4,7 +4,7 @@ var dictionary = {"merry":"allegro", "christmas":"natale", "and":"e", "happy":"f
 
   return {
   	translateToItalian: function(sentence) {
-      var sentenceArray = sentence.split(" ");
+      var sentenceArray = sentence.toLowerCase().split(" ");
       var italianSentence = "";
       for (var i = 0; i < sentenceArray.length; i++) {
 

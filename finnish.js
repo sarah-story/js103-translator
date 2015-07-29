@@ -2,7 +2,7 @@ var Translate = (function(translate) {
   var dictionary = {'merry':'iloinen', 'christmas':'joulu', 'and':'ja', 'happy':'onnellinen', 'new':'uusi', 'year':'vuosi'};
 
   translate.translateToFinnish = function(sentence) {
-    var sentenceArray = sentence.split(" ");
+    var sentenceArray = sentence.toLowerCase().split(" ");
       var finnishSentence = "";
       for (var i = 0; i < sentenceArray.length; i++) {
         if (sentenceArray[i] in dictionary) {

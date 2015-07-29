@@ -3,7 +3,7 @@ var Translate = (function(translate) {
 
  
  	translate.translateToSpanish = function(sentence) {
-    	var sentenceArray = sentence.split(" ");
+    	var sentenceArray = sentence.toLowerCase().split(" ");
       var spanishSentence = "";
       for (var i = 0; i < sentenceArray.length; i++) {
         if (sentenceArray[i] in dictionary) {
