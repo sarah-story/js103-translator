@@ -1,5 +1,9 @@
 var Translate = (function() {
-var dictionary = {"merry":"allegro", "christmas":"natale", "and":"e", "happy":"felice", "new":"nuovo", "year":"anno"};
+var dictionary = {"merry":"allegro", "christmas":"natale", "and":"e", "happy":"felice", "new":"nuovo", "year":"anno",
+  "holidays":"vacanze", "hanukkah":"hanukkah", "kwanza":"kwanza", "winter":"inverno", "we":"noi", "wish":"desiderare",
+  "you":"voi", "a":"un", "seasons":"stagioni", "greeting":"saluti", "santa":"santa", "deck":"ponte", "the":"il",
+  "halls":"sale", "holly":"agrifoglio", "jolly":"allegro", "love":"amare", "joy":"gioia", "peace":"pace", "noel":"noel"
+};
 
 
   return {
@@ -23,5 +27,3 @@ var dictionary = {"merry":"allegro", "christmas":"natale", "and":"e", "happy":"f
   }
       
 }());
-
-console.log(Translate.translateToItalian("merry christmas and happy new year"))
