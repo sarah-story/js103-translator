@@ -7,7 +7,15 @@ var dictionary = {"merry":"allegro", "christmas":"natale", "and":"e", "happy":"f
       var sentenceArray = sentence.split(" ");
       var italianSentence = "";
       for (var i = 0; i < sentenceArray.length; i++) {
-        italianSentence += dictionary[sentenceArray[i]] + " ";
+
+        if (sentenceArray[i] in dictionary) {
+
+          italianSentence += dictionary[sentenceArray[i]] + " ";
+        } else {
+          alert('Sorry, we do not recongize that word: ' + sentenceArray[i] + ' Please try again!')
+          italianSentence = "";
+          break;
+        }
       }
       return italianSentence;
     }
