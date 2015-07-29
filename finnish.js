@@ -5,7 +5,16 @@ var Translate = (function(translate) {
     var sentenceArray = sentence.split(" ");
       var finnishSentence = "";
       for (var i = 0; i < sentenceArray.length; i++) {
-        finnishSentence += dictionary[sentenceArray[i]] + " ";
+        if (sentenceArray[i] in dictionary) {
+
+          finnishSentence += dictionary[sentenceArray[i]] + " ";
+
+        } else {
+
+          alert("Sorry, we don't recognize the word: " + sentenceArray[i] + ". Please try again!")
+          finnishSentence = '';
+
+        }
       }
       return finnishSentence;
   }
