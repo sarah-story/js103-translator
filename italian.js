@@ -11,8 +11,9 @@ var dictionary = {"merry":"allegro", "christmas":"natale", "and":"e", "happy":"f
       }
       return italianSentence;
     }
-  }
 
+  }
+      
 }());
 
 console.log(Translate.translateToItalian("merry christmas and happy new year"))
