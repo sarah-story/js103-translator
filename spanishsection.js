@@ -1,7 +1,5 @@
 var Translate = (function(translate) {
-  var closest5 = ["Proxima Centauri", "Barnard's Star", "Luhman", "WISE", "Wolf"];
-  var estimatedAge = 0;
-  var dwarfPlanets = [];
+ var 
 
  
  	solarsystem.getcloset5 = function() {
