@@ -1,0 +1,38 @@
+body {
+	background-image: url("http://www.zingerbugimages.com/backgrounds/animated_dancing_grey_snowmen.gif");
+}
+
+.above {
+	text-align: center;
+	font-size: 3em;
+	color: red;
+	background-color: #9ACD32;
+	border: 3px solid black;
+}
+
+#input {
+	display: block;
+	margin: 0 auto;
+	width: 50%;
+	height: 25%;
+	font-size: 2em;
+	border: 2px solid green;
+}
+
+#language {
+	display: block;
+	margin: 20px auto;
+	width: 30%;
+	border: 2px solid green;
+	font-size: 2em;
+}
+
+#results {
+	text-align: center;
+	font-size: 2em;
+	color: red;
+	font-weight: bold;
+	background-color: #9ACD32;
+	border: 2px solid black;
+	display: none;
+}

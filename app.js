@@ -23,6 +23,5 @@ $('button').click( function() {
     $('#results').text(spanishSentence);
     var msg = new SpeechSynthesisUtterance(spanishSentence);
     window.speechSynthesis.speak(msg);
-  
   }
 });
