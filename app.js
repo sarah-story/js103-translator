@@ -5,7 +5,7 @@ $('button').click( function() {
   //get input values from textarea and select box
   var sentence = $("#input").val();
   var language = $("#language").val();
-  $('#results').css('display': 'block');
+  $('#results').css('display', 'block');
 
   //if statements to execute based on language selected
   if (language === 'italian') {

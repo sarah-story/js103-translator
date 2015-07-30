@@ -19,12 +19,16 @@ body {
 	border: 2px solid green;
 }
 
-#language {
+#language, button {
 	display: block;
 	margin: 20px auto;
 	width: 30%;
 	border: 2px solid green;
 	font-size: 2em;
+}
+
+#language {
+	text-indent: 37%;
 }
 
 #results {
